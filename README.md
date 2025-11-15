@@ -118,43 +118,6 @@ The system was tested on analysis of national interest claims:
 
 ---
 
-## 🚀 How to Use
-
-### Installation
-
-```bash
-pip install -r requirements.txt
-```
-
-### Configuration
-
-Create a `.env` file with your credentials:
-
-```bash
-GEMINI_API_KEY=your_key_here
-GOOGLE_API_KEY=your_key_here
-SEARCH_ENGINE_ID=your_id_here
-ALLOWED_ORIGINS=http://localhost:3000
-```
-
-### Run the API
-
-```bash
-uvicorn main:app --reload
-```
-
-The API will be available at: `http://localhost:8000`
-
-### Example Usage
-
-```bash
-curl -X POST "http://localhost:8000/investigate" \
-  -H "Content-Type: application/json" \
-  -d '{"text": "Your news here..."}'
-```
-
----
-
 ## 📁 Project Structure
 
 ```text
