@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🔍 News Investigator - AI</title>
+    <link rel="stylesheet" href="style-refined.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔍</text></svg>">
+    <meta name="description" content="Provide a lead and the AI investigates the event, consults multiple sources and delivers a complete report.">
+    <meta name="keywords" content="investigator, news, AI, fact-checking, facts, verification">
+</head>
+<body>
+    <div class="bg-animation"></div>
+    <div class="theme-toggle">
+        <button id="themeToggle" class="theme-btn" aria-label="Toggle between light and dark theme">
+            <span class="theme-icon">🌙</span>
+        </button>
+    </div>
+
+    <div class="container">
+        <header class="fade-in-up">
+            <div class="header-content">
+                <h1 class="gradient-text">🔍 News Investigator</h1>
+                <p>Provide a lead. The AI investigates the fact, checks multiple sources and delivers the report.</p>
+            </div>
+        </header>
+
+        <main>
+            <section id="investigation-section" class="glass-morphism hover-lift fade-in-up">
+                <h3 class="section-title">🕵️‍♂️ Start Investigation</h3>
+                <p class="instruction-text">To start an investigation, enter a news headline, a brief description of an event, or the URL of an existing news article in the field below.</p>
+                <div class="input-group">
+                    <label for="newsText">Initial Lead (Headline, Description or URL)</label>
+                    <textarea id="newsText" placeholder="Ex: 'Plane crash in São Paulo', 'National Museum fire', or a news URL"></textarea>
+                    <div id="validationMessage" class="error-message" style="display: none;"></div>
+                </div>
+                
+                <button id="investigateBtn" class="action-btn">
+                    🚀 Investigate Fact
+                </button>
+
+                <div id="loading" class="loading-indicator" style="display: none;">
+                    <div class="spinner"></div>
+                    <p>Investigating... The AI is checking multiple sources.</p>
+                </div>
+            </section>
+
+            
+        </main>
+
+        <div id="result-container"></div>
+    </div>
+
+    <script src="script-refined.js" defer></script>
+</body>
+</html>
